@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<a href="../index.html">Home Work №3</a>
+	<h1>Задача 6</h1>
+	<div>
+		<p>
+			Умова - з клавіатури вводиться номер дня тижня. Вивести на екран назву
+			дня.
+		</p>
+	</div>
+	<h2>Розв'язок:</h2>
+	<script>
+		const dayWeekNum = parseInt(
+			prompt("напишіть номер дня тижня від 1 - 7", "")
+		)
+
+		let result = ""
+		if (dayWeekNum === 1) result = "Понеділок"
+		else if (dayWeekNum === 2) result = "Вівторок"
+		else if (dayWeekNum === 3) result = "Середа"
+		else if (dayWeekNum === 4) result = "Четверг"
+		else if (dayWeekNum === 5) result = "Пятниця"
+		else if (dayWeekNum === 6) result = "Субота"
+		else if (dayWeekNum === 7) result = "Неділя"
+		document.write(`<div><p>${result}</p></div>`)
+	</script>
+</body>
+</body>
+
+</html>

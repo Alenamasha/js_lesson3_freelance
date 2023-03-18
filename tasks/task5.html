@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <a href="../index.html">Home Work №3</a>
+    <h1>Задача 5</h1>
+    <div>
+        <p>
+            Умова - з клавіатури вводиться назва категорії водія (А-мотоцикл,
+            В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву
+            транспортного засобу, яким він може керувати.
+        </p>
+    </div>
+    <h2>Розв'язок:</h2>
+    <script>
+        let driverCategory = prompt(
+            "напишіть назву категорії водія (A, B, C)",
+            ""
+        )
+        let result = ""
+
+        if (driverCategory == "A") result = "Вам дозволено керувати Мотоциклом"
+        else if (driverCategory == "B")
+            result = "Вам дозволено керувати Легковим автомобілем"
+        else if (driverCategory == "C")
+            result = "Вам дозволено керувати Вантажним автомобілем"
+        else result = "ПОМИЛКА - напишіть ТІЛЬКИ (A, B, C)"
+        document.write(`<div><p>${result}</p></div>`)
+    </script>
+</body>
+
+</html>
